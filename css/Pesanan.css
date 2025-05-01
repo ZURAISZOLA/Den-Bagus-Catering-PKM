@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 200px;
+  /* padding: 20px 100px; */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Container utama */
+.container {
+  padding: 40px;
+}
+
+/* Tombol kembali */
+.back a {
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  color: #ff9900;
+  gap: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-left: 4rem; */
+  margin-bottom: -2rem;
+}
+
+/* Konten utama (gambar + informasi) */
+.content {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* justify-content: center; */
+  margin-bottom: 100px;
+}
+
+/* Gambar produk */
+.product-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Informasi produk */
+.product-info {
+  max-width: 500px;
+}
+
+.product-info h2 {
+  font-size: 28px;
+  color: #f7a600;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Tombol harga */
+.price-buttons {
+  margin-bottom: 20px;
+}
+
+.price-buttons button {
+  background-color: white;
+  border: 1px solid #f7a600;
+  color: #f7a600;
+  border-radius: 20px;
+  padding: 6px 15px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.price-buttons button:hover {
+  background-color: #f7a600;
+  color: #fff;
+}
+
+/* Kontrol kuantitas */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.quantity-control button:first-child {
+  background-color: #c62828;
+}
+
+.quantity-control .plus {
+  background-color: #f7a600;
+}
+
+.quantity-control input.quantity {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+/* Tombol buat pesanan */
+.order-button {
+  background-color: #f7a600;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-button:hover {
+  background-color: #e09500;
+}
+
+/*hero*/
+
+.hero {
+  margin-top: 2rem;
+  width: 1140px;
+}
+
+/*hero*/
+
+@media (max-width: 1024px) {
+  footer {
+    margin-top: 3rem;
+  }
+  .footer-social {
+    margin-top: 2rem;
+  }
+
+  .hero {
+    margin: 2rem 0;
+  }
+
+  .title {
+    background-color: #ff9900;
+    width: 30%;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .back a {
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    color: #ff9900;
+    gap: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 4rem;
+    margin-bottom: -2rem;
+  }
+
+  .service-section {
+    display: flex;
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 1rem 3rem;
+    }
+
+    .service-item {
+      display: flex;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catering Pabrik</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/cateringPabrik.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="responsive">
+        <a href="../html/promo2.html" class="logo">
+          <img
+            src="../img/LG DEN BAGUS CATERING-01.jpg"
+            alt="Den Bagus Catering Logo"
+            class="logo-image"
+          />
+        </a>
+
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="navbar-links">
+          <li><a href="../html/Gallery.html">Gallery</a></li>
+          <li><a href="../html/Service.html" class="active">Service</a></li>
+          <li><a href="../html/promo2.html">Promo</a></li>
+          <li><a href="../html/Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="order-container">
+        <a href="#">
+          <i class="fas fa-shopping-cart cart-icon" style="font-size: 30px"></i>
+        </a>
+        <a href="../html/Service.html">
+          <button class="order-btn">Order Now</button>
+        </a>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="back">
+        <a href="../html/Service.html">
+          <i class="fa-solid fa-arrow-left"></i>
+          Kembali
+        </a>
+      </div>
+      <div class="title">Catering Pabrik</div>
+    </div>
+
+    <main>
+      <section class="service-section">
+        <div class="service-grid">
+          <div class="service-item">
+            <a href="../html/Pesanan.html">
+              <img src="../img/Spaghetti.jpg" alt="Spaghetti" />
+              <button class="catering-button">Spaghetti</button>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="#">
+              <img src="../img/Nasi Jagung.jpg" alt="Nasi Jagung" />
+              <button class="catering-button">Nasi Jagung</button>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="#">
+              <img src="../img/Nasi Bakar.jpg" alt="Nasi Bakar" />
+              <button class="catering-button">Nasi Bakar</button>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="#">
+              <img src="../img/Kwetiaw.jpg" alt="Kwetiaw" />
+              <button class="catering-button">Kwetiaw</button>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="#">
+              <img
+                src="../img/Korean Potato Bowl 알감자-조림.jpg"
+                alt="Rice bowl"
+              />
+              <button class="catering-button">Rice bowl</button>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="#">
+              <img src="../img/Nasi Padang.jpg" alt="Nasi Padang" />
+              <button class="catering-button">Nasi Padang</button>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="#">
+              <img src="../img/Nasi Campur.jpg" alt="Nasi Campur" />
+              <button class="catering-button">Nasi Campur</button>
+            </a>
+          </div>
+          <div class="service-item">
+            <a href="#">
+              <img
+                src="../img/Nasi Ayam Panggang.png"
+                alt="Nasi Ayam Panggang"
+              />
+              <button class="catering-button">Nasi Ayam Panggang</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../javascript/promo2.js"></script>
+    <script>
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </body>
+</html>
